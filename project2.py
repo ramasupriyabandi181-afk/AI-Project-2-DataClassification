@@ -33,7 +33,7 @@ dataset_path = "iris.csv"
 
 if not os.path.exists(dataset_path):
     print("\nERROR: Dataset file not found!")
-    print("Please make sure iris.csv is inside the dataset folder.")
+    print("Please make sure iris.csv is inside the project folder.")
     exit()
 
 data = pd.read_csv(dataset_path)
@@ -58,7 +58,7 @@ print(data.head())
 print("\n[3] DATASET INFORMATION")
 print("-" * 60)
 
-print(data.info())
+data.info()
 
 
 print("\n[4] MISSING VALUES")
